@@ -4,93 +4,133 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Frontend-Tussenopdracht-ThijsKraaijenbos</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <!-- Begin Header + Nav -->
     <header>
-        <img src="images/t-k2.png" alt="Logo" class="headerimg">
+        <div id="logopart">
+            <img src="images/t-k2.png" alt="Logo" id="headerimage">
+            <p id="logo"> - Shop</p>
+        </div>
         <nav>
-            <a href="#prijs">Prijs</a>
-            <a href="#Omschrijving">Omschrijving</a>
-            <a href="#Gerelateerde Producten">Gerelateerde Producten</a>
+            <a href="#productdetails">Prijs</a>
+            <a href="#omschrijving">Omschrijving</a>
+            <a href="#gerelateerd">Gerelateerde Producten</a>
         </nav>
     </header>
     <!-- Eind Header + Nav -->
 
     <!-- Begin main -->
     <main>
-        <section>
-            <h1>Big Chungus Figurine</h1>
-            <img src="https://i.etsystatic.com/15901775/r/il/f87169/4198116181/il_fullxfull.4198116181_4cow.jpg"
-                alt="Afbeelding Product" />
-            <h2>$69,99</h2>
-            <p>Korte productomschrijving</p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt atque,
-                quaerat ea quam consectetur consequuntur eum optio totam labore
-                tenetur itaque aliquam laborum natus provident vero ratione sed.
-                Autem, quae.
-            </p>
-
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Bestellen</a>
+        <section id="main1">
+            <div id="product">
+                <h1>Logitech G733 LIGHTSPEED Headset</h1>
+                <img src="https://resource.logitechg.com/d_transparent.gif/content/dam/gaming/en/products/g733/gallery/g733-black-gallery-1.png"
+                    alt="Afbeelding Gaming Headset LOGITECH G733" />
+            </div>
+            <div id="productdetails">
+                <h2>€129,00</h2>
+                <p id="proddesc">Korte productomschrijving</p>
+                <p>
+                    De Logitech G733 is een geavanceerde draadloze gaming-headset die gamers een meeslepende
+                    geluidsbeleving biedt. Met
+                    kristalhelder geluid, aanpasbare stijlopties en lange batterijduur is dit de ideale keuze voor
+                    serieuze gamers.
+                </p>
+                <a href="https://www.logitechg.com/nl-nl/products/gaming-audio/g733-rgb-wireless-headset.981-000864.html"
+                    target="_blank" id="mainbestel">Bestellen</a>
+            </div>
         </section>
 
-        <section>
-            <h3>Plus- en minpunten</h3>
-            <p>✓ Cute</p>
-            <p>✓ Hoge kwaliteit</p>
-            <p>✗ Geen grotere variant te koop</p>
+        <section id="main3">
+            <div id="plusmin">
+                <h3>Plus- en minpunten</h3>
+                <p class="pm">✔ Comfortabel</p>
+                <p class="pm">✔ Hoge kwaliteit</p>
+                <p class="pm">✘ Niet goed voor sporten</p>
+            </div>
 
-            <h2>Omschrijving</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis culpa,
-                aperiam amet facilis a harum vitae magni modi odio ratione optio
-                quaerat eum nostrum odit dolor? Commodi esse repudiandae aspernatur?
-            </p>
+            <div id="omschrijving">
+                <h2 class="h2oms">Omschrijving</h2>
+                <p>
+                    De Logitech G733 is een geavanceerde draadloze gaming-headset met indrukwekkende specificaties. Deze
+                    headset biedt een
+                    batterijduur van maar liefst 29 uur, waardoor je urenlang kunt gamen zonder zorgen over opladen. De
+                    geluidskwaliteit is
+                    uitzonderlijk, met heldere audio en ruisonderdrukking voor kristalheldere communicatie met je
+                    teamgenoten.
+                </p>
+                <p>
+                    De G733 is niet alleen functioneel, maar ook stijlvol aanpasbaar. Je kunt de headset personaliseren
+                    met verwisselbare
+                    hoofdband- en oorkussenkleuren, evenals programmeerbare verlichtingsopties om je eigen gamingstijl
+                    te creëren. Het
+                    ergonomische ontwerp zorgt voor comfort, zelfs tijdens lange gamingsessies.
+                </p>
+                <p>
+                    Met betrouwbare draadloze connectiviteit en handige bedieningselementen voor volume en
+                    microfoondemping, biedt de
+                    Logitech G733 een totaalpakket voor serieuze gamers die zowel prestaties als stijl waarderen.
+                </p>
+            </div>
         </section>
 
-        <section>
+        <section id="gerelateerd">
             <h2>Gerelateerde Producten</h2>
+            <div id="relprodscontainer">
+                <div class="relprods">
+                    <img src="images/keyboard.png" target="_blank" alt="Keychron C2 Keyboard" />
+                    <a
+                        href="https://www.keychron.com/products/keychron-c2-wired-mechanical-keyboard?variant=32312448942169">Keychron
+                        C2 Keyboard</a>
+                    <p>
+                        De Keychron C2 is een veelzijdig mechanisch toetsenbord met aanpasbare schakelaars voor een
+                        persoonlijke typervaring.
+                        Het is compatibel met zowel Windows als Mac en biedt duurzame PBT Keycaps, waardoor het perfect
+                        is voor typeliefhebbers
+                        die prestaties en stijl willen combineren.
+                    </p>
+                </div>
 
-            <img src="https://m.media-amazon.com/images/I/816KRetAQNL.jpg" target="_blank" alt="Moyai Standbeeld" />
-            <h3>Moyai Standbeeld</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                dolorum ab fugiat sapiente animi tenetur, maiores quisquam aliquam
-                quos repudiandae cum harum ducimus odit, placeat rerum doloribus
-                accusantium ut corporis.
-            </p>
-
-            <img src="https://rbhog.me/favicon.ico" target="_blank" alt="Obama Prism" />
-            <h3>Obama Prism</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                dolorum ab fugiat sapiente animi tenetur, maiores quisquam aliquam
-                quos repudiandae cum harum ducimus odit, placeat rerum doloribus
-                accusantium ut corporis.
-            </p>
-
-            <img src="https://cdn3.emoji.gg/stickers/4065-pepega.png" target="_blank" alt="Pepega Sticker" />
-            <h3>Pepega Sticker</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                dolorum ab fugiat sapiente animi tenetur, maiores quisquam aliquam
-                quos repudiandae cum harum ducimus odit, placeat rerum doloribus
-                accusantium ut corporis.
-            </p>
+                <div class="relprods">
+                    <img src="https://www.ostsome.com/cdn/shop/products/ROC-Kone-AIMO_Back_persp_right_BLK_1024x.png?v=1645691755"
+                        target="_blank" alt="Roccat Kone AIMO Mouse" />
+                    <a href="https://ca.roccat.com/products/kone-aimo-remastered">Roccat Kone AIMO Muis</a>
+                    <p>
+                        De Roccat Kone Aimo is een geavanceerde gamingmuis met nauwkeurige optische sensoren, aanpasbare
+                        RGB-verlichting en een
+                        ergonomisch ontwerp voor comfortabele gameplay. Deze muis is ideaal voor zowel competitieve
+                        gamers als liefhebbers van
+                        hoogwaardige technologie
+                    </p>
+                </div>
+                <div class="relprods">
+                    <img src="https://nl.akg.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw839ad333/AKG_P120.png?sw=556&sh=680&sm=fit"
+                        target="_blank" alt="AKG P120 Microfoon" />
+                    <a href="https://www.akg.com/Microphones/Condenser%20Microphones/P120-.html">AKG P120 Microfoon</a>
+                    <p>
+                        De AKG P120 is een veelzijdige condensatormicrofoon met uitstekende geluidskwaliteit voor zang,
+                        instrumenten en spraak.
+                        Het robuuste ontwerp en de cardioïde richtingsgevoeligheid maken het ideaal voor zowel studio-
+                        als livegebruik, en dit
+                        alles tegen een betaalbare prijs.
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
     <!-- Eind main -->
 
     <!-- Begin footer -->
     <footer>
-        <p>Privacy Policy</p>
-        <p>Terms & Conditions</p>
-        <p>Cookie Policy</p>
-        <p>Contact</p>
+        <!-- Deze kunnen later nog aangepast worden als het een volledige website moet worden -->
+        <a href="">Privacy Policy</a>
+        <a href="">Terms & Conditions</a>
+        <a href="">Cookie Policy</a>
+        <a href="">Contact</a>
     </footer>
     <!-- Eind footer -->
 </body>

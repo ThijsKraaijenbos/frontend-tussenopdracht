@@ -1,31 +1,230 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 550;
     background-color: white;
     margin: 0px
 }
 
+
+/* Alle Header informatie */
 header {
     background-color: #caf0f8;
-    padding: 40px 0px 40px 100px;
+    padding: 20px 0px 20px 80px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    border-bottom: 2px black solid;
+    font-size: 1.2em;
 }
 
 a {
     text-decoration: none;
-    color: #03045e;
+    color: rgb(45, 58, 60);
+    margin-left: 30px;
 }
 
-.headerimg {
+#headerimage {
+    border: none;
+    height: 44px;
+    width: 44px;
+}
+
+header img {
+    background-color: none;
+}
+
+#logopart {
+    display: flex;
     background-color: #90e0ef;
     border: 2px solid black;
     border-radius: 10px;
-    height: 50px;
-    width: 50px
+    padding: 0px 6px 0px 3px;
+    justify-content: center;
+    align-items: center;
 }
 
-img {
+#logo {
+    font-weight: 999;
+}
+
+
+
+/* Alle Main informatie */
+
+/* Section 1 */
+#product img {
+    width: 120%;
+    max-width: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #f1fbfe;
+}
+
+section {
+    padding: 50px 80px;
+}
+
+#main1 {
+    display: flex;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+    padding: 40px 80px 80px;
+    gap: 100px;
+}
+
+#product {
+    width: 60%;
+}
+
+#productdetails {
+    justify-content: flex-start;
+    margin-top: 100px;
+    width: 40%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+h2 {
+    font-size: 3rem;
+    padding-bottom: 40px;
+}
+
+#proddesc {
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+#mainbestel {
+    color: black;
+    padding: 14px;
+    border: 3px solid #90e0ef;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    background: linear-gradient(to right, #00b4d8 50%, #90e0ef 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: all 0.5s ease-in-out;
+}
+
+#mainbestel:hover {
+    background-position: left;
+    color: white;
+}
+
+
+
+/* Section 2 */
+#main3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: top;
+    gap: 40px;
+}
+
+#plusmin {
+    background-color: #caf0f8;
+    padding: 20px 9% 30px 60px;
+    white-space: nowrap;
+    border: 2px solid black;
+    border-radius: 7.5px;
+    height: min-content;
+}
+
+h3 {
+    font-size: 1.7rem;
+    margin-bottom: 0px;
+}
+
+.pm {
+    font-weight: 700;
+}
+
+.h2oms {
+    padding: 0px;
+    margin: 0px
+}
+
+
+
+/* Section 3 */
+#gerelateerd {
+    text-align: center;
+    background-color: #caf0f8;
+}
+
+#relprodscontainer {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.relprods {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.relprods a {
+    color: black;
+    text-align: center;
+    margin-left: 0px;
+    font-size: 1.7rem;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.relprods a:hover {
+    color: white;
+    background-color: #202b38;
+}
+
+.relprods img {
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #f1fbfe;
     width: 200px;
+    height: 200px;
+    object-fit: contain;
+    padding: 2px;
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: #f7fdff;
+}
+
+.relprods p {
+    width: 400px;
+}
+
+/* Footer */
+footer {
+    background-color: #202b38;
+    color: rgb(143, 156, 165);
+    display: flex;
+    font-weight: 999;
+    font-size: 1.2rem;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(143, 156, 165);
 }
